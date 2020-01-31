@@ -3,108 +3,121 @@
   <head>
     <meta charset="UTF-8">
     <title>Compas Ingénieurs Sàrl - Bureau d'ingénieurs à Lausanne</title>
-    <style type="text/css">
-        html, body {
-            margin: 20px;
-            font-family: sans-serif, Hevetica;
-            font-size: 14pt;
-            color: #373737;
-        }
-
-        .container {
-            max-width: 640px;
-            margin: 20px auto 40px auto;
-        }
-        
-        .logo {
-            margin-bottom: 40px;
-        }
-        .logo img {
-            width: 100%;
-        }
-        
-        .contacts {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-
-        .contact {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: column;
-            flex-basis: 100%;
-            flex: 1;
-        }
-
-        ul {
-            margin-bottom: 1.5em;
-            margin-top: 1.5em;
-        }
-        ul li {
-            margin-top: 1em;
-        }
-
-        footer {
-            margin: 50px auto 20px auto;
-            text-align: center;
-            color: gray;
-            line-height: 1.3em;
-        }
-
-        p {
-            margin-bottom: 1.2em;
-            line-height: 1.1em;
-        }
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
   </head>
-  <body>
-    <div class="container">
-
-        <div class="logo">
-            <img src="img/logo_compas_ing.png">
-        </div>
-
-        <p>
-            Nous sommes un bureau d’études développant nos activités d’ingénierie dans les domaines du bâtiment, des ouvrages d’art, des infrastructures de transport, des travaux spéciaux ainsi que la planification générale de projets. 
-        </p>
-
-        <p>
-            Nous proposons des prestations dans les domaines :
-        </p>
-        <ul>
-            <li>Génie Civil et Bâtiment</li>
-            <li>BIM « Building Information Modeling »</li>
-            <li>Infographie : Réalité Virtuelle et Images de synthèse</li>
-        </ul>
-        <p>
-            Nous nous démarquons par notre expérience et notre savoir-faire dans l’utilisation des dernières technologies. Ceci nous permet d’assurer qualité et performance auprès de nos clients.
-        </p>
-        
-        <div class="contacts">
-            <div class="contact">
-                <strong>Alexandru MORARU</strong><br/>
-                Ingénieur Civil EPFL – SIA<br/>
-                <a href="mailto:a.moraru@compas-ing.ch">a.moraru@compas-ing.ch</a><br/>
-                Cofondateur<br/>
-                076 603 63 22<br/>
-            </div>
-
-            <div class="contact">
-                <strong>Carlos MATURANA</strong><br/>
-                Spécialiste BIM<br/>
-                <a href="mailto:c.maturana@compas-ing.ch">c.maturana@compas-ing.ch</a><br/>
-                Cofondateur<br/>
-                076 367 20 97<br/>
-            </div>
-        </div>
+  <body class="system-sans-serif avenir navy">
+    <img src="img/logo_compas_ing.png" class="center db mv4" style="min-width: 300px;">
+    <div class="vh-50 pt5" style="background-image: url(img/luca-bravo-alS7ewQ41M8-unsplash.jpg); background-size: cover; background-origin: 100% 100%;">
+      <p class="f3 lh-copy navy-50 measure-wide center pv4 ph4">
+        Nous sommes <strong>un bureau d’études développant nos activités d’ingénierie</strong> dans les domaines du bâtiment, des ouvrages d’art, des infrastructures de transport, des travaux spéciaux ainsi que la planification générale de projets. 
+      </p>
     </div>
-        <footer>
-            Compas Ingénieurs Sàrl,
-            Avenue&nbsp;Villamont&nbsp;23,
-            CH&nbsp;1005&nbsp;Lausanne
-            +41&nbsp;21&nbsp;311&nbsp;94&nbsp;94
-        </footer>
+    <div class="pa3">
+      <main class="measure-wide center">
+        <h3 class="f4">
+            Nous proposons des prestations dans les domaines
+        </h3>
+        <ul class="f4">
+          <li>Génie Civil et Bâtiment</li>
+          <li>BIM « Building Information Modeling »</li>
+          <li>Infographie : Réalité Virtuelle et Images de synthèse</li>
+        </ul>
+        <p class="f4 mt5">
+          Nous nous démarquons par notre expérience et notre savoir-faire dans l’utilisation des dernières technologies. Ceci nous permet d’assurer <strong>qualité</strong> et <strong>performance</strong> auprès de nos clients.
+        </p>
+
+        <h3 class="f4 mt5 bb b--black-20 pb2">
+          Notre équipe
+        </h3>
+        <div class="f4">
+          <article class="dt b--black-20 pb3 bb mb4 w-100">
+              <div class="dtc w4 w4-ns v-mid">
+                  <img src="img/alexandru_moraru.jpg" class="ba b--black-10 db br-100 w4 w4-ns h4 h4-ns" />
+              </div>
+              <div class="dtc v-mid pl4">
+                  <h1 class="f4 f4-ns fw6 lh-title black mv0">Alexandru Moraru</h1>
+                  <h2 class="f4 fw4 mt0 mb0 black-60">Ingénieur Civil / EPFL</h2>
+                  <p>
+                      <p class="f5 pv0 mv0">
+                          <span class="dib pr3 pt3">🌍 <a target="_blank" href="https://www.linkedin.com/in/alexandru-moraru-12109547/" class="dim black-60 b--black-10">LinkedIn</a></span>
+                          <span class="dib pr3 pt3">✉️ <a href="mailto:a.moraru@compas-ing.ch" class="dim b--black-10 black-60">a.moraru@compas-ing.ch</a></span>
+                      </p>
+                  </p>
+              </div>
+          </article>  
+          <article class="dt b--black-20 pb3 bb mb4 w-100">
+              <div class="dtc w4 w4-ns v-mid">
+                  <img src="img/carlos_maturana.jpg" class="ba b--black-10 db br-100 w4 w4-ns h4 h4-ns" />
+              </div>
+              <div class="dtc v-mid pl4">
+                  <h1 class="f4 f4-ns fw6 lh-title black mv0">Carlos Maturana</h1>
+                  <h2 class="f4 fw4 mt0 mb0 black-60">BIM Spécialiste</h2>
+                  <p>
+                      <p class="f5 pv0 mv0">
+                          <span class="dib pr3 pt3">🌍 <a target="_blank" href="https://www.linkedin.com/in/carlos-maturana-5bb38ba6/" class="dim black-60 b--black-10">LinkedIn</a></span>
+                          <span class="dib pr3 pt3">✉️ <a href="mailto:a.moraru@compas-ing.ch" class="dim b--black-10 black-60">a.moraru@compas-ing.ch</a></span>
+                      </p>
+                  </p>
+              </div>
+          </article>  
+          <article class="dt b--black-20 pb3 bb mb4 w-100">
+              <div class="dtc w4 w4-ns v-mid">
+                  <div class="ba b--black-10 bg-black-10 db br-100 w4 w4-ns h4 h4-ns"></div>
+              </div>
+              <div class="dtc v-mid pl4">
+                  <h1 class="f4 f4-ns fw6 lh-title black mv0">Attila Obrovac</h1>
+                  <h2 class="f4 fw4 mt0 mb0 black-60">Ingénieur civil</h2>
+                  <p>
+                      <p class="f5 pv0 mv0">
+                          <!-- <span class="dib pr3 pt3">🌍 <a target="_blank" href="https://www.linkedin.com/in/carlos-maturana-5bb38ba6/" class="dim black-60 b--black-10">LinkedIn</a></span> -->
+                          <span class="dib pr3 pt3">✉️ <a href="mailto:a.obrovac@compas-ing.ch" class="dim b--black-10 black-60">c.obrovac@compas-ing.ch</a></span>
+                      </p>
+                  </p>
+              </div>
+          </article>     
+          <article class="dt b--black-20 pb3 bb mb4 w-100">
+              <div class="dtc w4 w4-ns v-mid">
+                  <img src="img/marc_valtuena.jpg" class="ba b--black-10 db br-100 w4 w4-ns h4 h4-ns" />
+              </div>
+              <div class="dtc v-mid pl4">
+                  <h1 class="f4 f4-ns fw6 lh-title black mv0">Marc Valtuena</h1>
+                  <h2 class="f4 fw4 mt0 mb0 black-60">Dessinateur Génie civil</h2>
+                  <p>
+                      <p class="f5 pv0 mv0">
+                          <span class="dib pr3 pt3">🌍 <a target="_blank" href="https://www.linkedin.com/in/marc-valtuena-bb2912196/" class="dim black-60 b--black-10">LinkedIn</a></span>
+                          <span class="dib pr3 pt3">✉️ <a href="mailto:m.valtuena@compas-ing.ch" class="dim b--black-10 black-60">m.valtuena@compas-ing.ch</a></span>
+                      </p>
+                  </p>
+              </div>
+          </article>    
+          <article class="dt b--black-20 pb3 bb mb4 w-100">
+              <div class="dtc w4 w4-ns v-mid">
+                  <img src="img/alexander_lara.jpg" class="ba b--black-10 db br-100 w4 w4-ns h4 h4-ns" />
+              </div>
+              <div class="dtc v-mid pl4">
+                  <h1 class="f4 f4-ns fw6 lh-title black mv0">Alexander Lara</h1>
+                  <h2 class="f4 fw4 mt0 mb0 black-60">Apprenti dessinateur Génie civil</h2>
+                  <p>
+                      <p class="f5 pv0 mv0">
+                          <span class="dib pr3 pt3">🌍 <a target="_blank" href="https://www.linkedin.com/in/alexander-lara-gonzalez-0123aa192/" class="dim black-60 b--black-10">LinkedIn</a></span>
+                          <span class="dib pr3 pt3">✉️ <a href="mailto:a.lara@compas-ing.ch" class="dim b--black-10 black-60">a.lara@compas-ing.ch</a></span>
+                      </p>
+                  </p>
+              </div>
+          </article>                         
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black-10 pa3 mt4 pb5">
+        <div class="measure-wide center">
+          <p class="f4">
+            <strong>Compas Ingénieurs Sàrl</strong><br/>
+            Avenue&nbsp;Villamont&nbsp;23<br/>
+            CH&nbsp;1005&nbsp;Lausanne<br/>
+            +41&nbsp;21&nbsp;311&nbsp;94&nbsp;94<br/>
+            <a href="mailto:info@compas-ing.ch">info@compas-ing.ch</a>
+          </p>
+        </div>
+    </footer>
   </body>
 </html>
